@@ -71,13 +71,16 @@
 
 @media screen and (max-width: 480px) {
 
-    /* .footerWrapper{
-    } */
+    .footerWrapper{
+        margin: 0;
+    }
 
-    .topinFooter{
+    .footerWrapper .topinFooter{
         height: max-content;
         flex-direction: column;
         gap: 5px;
+        /* background: #d10e0e; */
+        margin-bottom: 20px;
     }
     .topinFooter .textWrappers{
         width: 90%;

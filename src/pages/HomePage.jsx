@@ -43,7 +43,7 @@ const HomePage = () => {
     <>
       <div className='homePageContainer'>
         <div className="heroHeader">
-          <img src="src/assets/images/shoppingLady.jpg" alt="" />
+          <img src="src/images/shoppingLady.jpg" alt="" />
           <div className="heroHeaderTextWrapper">
             <p>60% Discount</p>
             <h1>Valentine Collection</h1>

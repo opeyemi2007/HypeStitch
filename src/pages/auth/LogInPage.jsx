@@ -29,6 +29,10 @@ const LogInPage = () => {
 
                 <input type="email" placeholder='email' className='loginInput'/>
                 <input type="password" placeholder='Password' className='loginInput'/>
+                <div className="rememberMeAndSignupLinkHolder">
+                  <span>Don't have an account? <a className='signupLink' onClick={()=> navigate('/signup')} style={{color: 'blue'}}>SignUp</a></span>
+                  <a href='#' className='forgotPasswordLink'>Forgot Password?</a>
+                </div>
                 <span><input type="checkbox"  name="remeber" value="RememberMe" className='rememberMer'/> Remember Me</span>
                 
                 <button className="loginBtn">LOG IN</button>

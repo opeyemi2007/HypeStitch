@@ -1,362 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-.profileWrapper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
+.user-profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
-    
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+  position: relative;
+}
 
-.profileWrapper .rightSideBar{
-    width: 80%;
-    height: 100%;
-    display: flex;
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#profile-pic-upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profile-info h1 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.profile-details-edit, .profile-details-view {
+  margin-top: 15px;
+}
+
+.profile-details-edit label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.profile-details-edit input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.profile-buttons button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-profile-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.order-history, .wishlist {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-history h2, .wishlist h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.order-item, .wishlist-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: white;
-}
+    text-align: center;
+  }
 
-.rightSideBar .profileInfoHolder{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    /* background: #000; */
-}
+  .profile-picture {
+    margin: 0 0 20px 0;
+  }
 
-.profileInfoHolder .profileName{
-    width: 40%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background: greenyellow; */
-}
-
-.profileName h1{
-    font-family: "Roboto", serif;
-    margin: 0;
-}
-
-.profileName p{
-    font-family: monospace;
-    font-size: 17px;
-    margin: 0;
-}
-
-.profileInfoHolder .profilePic{
-    width: 150px;
-    height: 150px;
-    background: rebeccapurple;
-    border-radius: 50%;
-    position: relative;
-}
-
-.profilePic .editProfilePic{
-    padding: 5px;
-    font-size: 25px;
-    border-radius: 50%;
-    color: white;
-    background: #2678fc;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-}
-
-.rightSideBar .alldetailsContainer{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    /* background: blue; */
-}
-
-.alldetailsContainer .alldetailsInnerLeftContainer{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* background: pink; */
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 
-.alldetailsInnerLeftContainer .accountBalanceContainer{
-    width: 95%;
-    height: 25%;
-    /* background: goldenrod; */
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 
-.accountBalanceContainer h1{
-    font-size: 20px;
-    font-family: "Roboto", serif;
-    margin: 0;
-}
-
-.accountBalanceContainer .balace{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background: red; */
-}
-
-.balace h1{
-    font-size: 45px;
-}
-
-.balace .buttonsWrapper{
-    width: 20%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 10px;
-    /* background: turquoise; */
-}
-
-.balace .buttonsWrapper button{
-    padding: 5px;
-    border: 0;
-    font-size: 15px;
+.user-profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 280ms;
-}
-
-.balace .buttonsWrapper button:hover{
-    color: white;
-    background: grey;
-    transition: 280ms;
-}
-
-.alldetailsInnerLeftContainer .membershipLevelContainer{
-    width: 95%;
-    height: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .profile-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* background: red; */
-}
-
-.membershipLevelContainer h1{
-    font-size: 23px;
-    font-family: "Roboto", serif;
-}
-
-.membershipLevelContainer h2{
-    font-family: monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.alldetailsInnerLeftContainer .myOrdersContainer{
-    width: 95%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background: #c995956f;
-    border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.myOrdersContainer h1{
-    font-size: 20px;
-    margin: 0;
-    font-family: "Roboto", serif;
-    margin-left: 5px;
-}
-
-.myOrdersContainer span{
-    margin-left: 5px;
-}
-
-.alldetailsInnerLeftContainer .AuthVerificationsContainer{
-    width: 95%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    /* background: blueviolet; */
-}
-
-.AuthVerificationsContainer h2{
-    font-size: 20px;
-    margin: 0;
-    font-family: "Roboto", serif;
-    margin-left: 5px;
-}
-
-.AuthVerificationsContainer span{
-    font-size: 18px;
-    font-family: monospace;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: 280ms;
-
-}
-
-.AuthVerificationsContainer span:hover{
-    background: whitesmoke;
-    transition: 280ms;
-}
-
-.alldetailsContainer .alldetailsInnerRightContainer{
-    width: 50%;
+    margin-bottom: 30px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .profile-picture img {
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* background: greenyellow; */
-}
-
-.alldetailsInnerRightContainer .depositHistoryContainer{
+    object-fit: cover;
+  }
+  
+  #profile-pic-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    overflow-y: auto;
-    /* background: turquoise; */
-}
-
-
-.depositHistoryContainer h1{
-    margin: 0;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-}
-
-.depositHistoryContainer .depositCards{
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .profile-info h1 {
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .profile-details-edit, .profile-details-view {
+    margin-top: 15px;
+  }
+  
+  .profile-details-edit label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .profile-details-edit input {
     width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.depositCards h1{
-    font-size: 45px;
-}
-
-.depositCards p{
-    font-size: 20px;
-}
-
-.alldetailsInnerRightContainer .orderHistoryContainer{
-    width: 100%;
-    height: 45%;
-    background: grey;
-}
-
-
-@media screen and (max-width: 480px) {
-
-   .profileWrapper .rightSideBar{
-      width: 95%;
-   }
-
-   .rightSideBar .profileInfoHolder{
-    width: 100%;
-    height: max-content;
-    margin-top: 100px;  
-    /* background: #000; */
-   }
-
-   .profileInfoHolder .profileName{
-    width: max-content;
-    height: max-content;
-    /* background: #000; */
-   }
-
-   .alldetailsInnerLeftContainer{
-    /* background: #000; */
     padding: 10px;
-    /* width: 45%; */
-   }
-
-   .profileName h1{
-    font-size: 30px;
-   }
-
-   .profileName p{
-    font-size: 15px;
-   }
-
-   .profileInfoHolder .profilePic{
-    width: 140px;
-    height: 140px;
-   }
-
-   .rightSideBar .alldetailsContainer{
-    width: 100%;
-    height: 600px;
-    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .profile-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     margin-right: 10px;
-    /* background: red; */
-   }
-
-   .accountBalanceContainer h1{
-    font-size: 20px;
-    color: red;
-   }
-
-   .balace h1{
-    color: green;
-    font-size: 33px;
-   }
-
-   .balace .buttonsWrapper{
-    width: max-content;
-    height: 30px;
-    /* background: red; */
-    margin-bottom: 27px;
-   }
-
-   .balace .buttonsWrapper button{
-    padding: 2;
-    font-size: 10px;
-   }
-
-
-
-   .alldetailsInnerLeftContainer .membershipLevelContainer{
-    background: #000;
-    display: none;
-   }
-
-   .depositHistoryContainer .depositCards{
-    height: 45%;
-   }
-
-    .AuthVerificationsContainer span{
-        font-size: 11px;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .edit-profile-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .order-history, .wishlist {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-history h2, .wishlist h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .order-item, .wishlist-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    .depositCards h1{
-        font-size: 28px;
+  
+    .profile-picture {
+      margin: 0 0 20px 0;
     }
-}
-
-
-
+  
+    .profile-content {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -70,7 +70,7 @@ const SignUpPage = () => {
         </div>
 
         <div className="loginForm">
-          <h1>
+          <h1 style={{margin: 0, fontSize: 20}}>
             Welcome ! <br />
             Please Sign Up now
           </h1>
@@ -113,16 +113,14 @@ const SignUpPage = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
 
-          <span>
-            <input
-              type="checkbox"
-              name="remember"
-              value="RememberMe"
-              className="rememberMer"
-              required
-            />
-            Agree to our terms & conditions
-          </span>
+          <p style={{margin: 0}}>By signing up, you agree to our Terms & Conditions and Privacy Policy.</p>
+          <div className="rememberMeAndSignupLinkHolder">
+            <p style={{margin:0}}>Already have and account?</p><a style={{color: 'blue'}} className="signupLink" onClick={()=> navigate('/login')}>
+              Login
+            </a>
+          </div>
+
+
 
           <button className="loginBtn" onClick={handleLogin} disabled={loadingState}>
             {loadingState ? "Signing up..." : "SIGN UP"}

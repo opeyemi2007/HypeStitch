@@ -141,6 +141,10 @@
     transition: 280ms ease-in-out;
 }
 
+.rememberMeAndSignupLinkHolder{
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
     .loginWrapper{
         width: 100%;
@@ -152,16 +156,34 @@
         /* background: #000; */
     }
 
+    .loginForm .loginInput::placeholder{
+        font-size: 15px;
+    }
+
+    .loginForm .loginInput{
+        font-size: 15px;
+    }
+
    .loginWrapper .loginContainer{
         height: 50%;
-        width: 95%;
+        width: 85%;
         justify-content: space-around;
         margin-right: 18px;
         /* background: rgb(133, 214, 133); */
     }
 
+    .rememberMeAndSignupLinkHolder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
     .loginContainer .loginForm{
-        width: 50%;
+        width: 100%;
         /* background: red; */
     }
 
@@ -178,11 +200,18 @@
         font-size: 25px;
     }
 
-    .loginForm .signUpside{
+    .loginContainer .signUpside{
         width: 40%;
+        display: none;
     }
 
     .signUpside .signupBtn{
         font-size: 10px;
+    }
+
+    .loginWrapper .loginContainer{
+        /* background: #000; */
+        margin: 0;
+        margin-top: 40px;
     }
 }
