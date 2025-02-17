@@ -1,0 +1,158 @@
+.navigatesWrapper{
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.countrySelectorWrapper{
+    width: 15%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    /* background: grey; */
+}
+
+.countryFlag{
+    width: 50px;
+    height: 30px;
+}
+
+.countryName{
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;    
+}
+
+.currencyName{
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.countrydropdown{
+    width: 50%;
+    height: 200px;
+    top: 50px;
+    right: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.dropdownContent{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+}
+
+.dropdownContent a{
+    color: black;
+    font-family: monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropIcon{
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.dropdownContent a:hover{
+    background: lightgray;
+    transition: background 0.3s ease;
+
+}
+
+.linksWrapper{
+    width: 35%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: grey; */
+}
+
+.linksWrapper li{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    list-style-type: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+
+}   
+
+
+@media screen and (max-width: 480px) {
+
+    .countrySelectorWrapper{
+        width: max-content;
+        gap: 10px;
+        /* background: red; */
+    }
+
+    .countryFlag{
+        width: 35px;
+        height: 20px;
+    }
+
+    .countryName{
+        font-size: 15px;
+    }
+
+    .currencyName{
+        font-size: 10px;
+    }
+
+    .countrydropdown{
+        width: 65%;
+    }
+
+    .linksWrapper{
+        width: 50%;
+        display: none;
+        /* background: red; */
+    }
+
+    .linksWrapper li{
+        font-size: 10px;
+    }
+
+    .userProfile{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        background: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,360 @@
+[
+    {
+      "id": 1,
+      "name": "Basic T-shirt",
+      "category": "New",
+      "price": "$19.99",
+      "image": "src/assets/images/basicTshirt.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Denim Jacket",
+      "category": "Featured",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Denim+Jacket"
+    },
+    {
+      "id": 3,
+      "name": "Slim Fit Jeans",
+      "category": "Offer",
+      "price": "$29.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Slim+Fit+Jeans"
+    },
+    {
+      "id": 4,
+      "name": "Plaid Shirt",
+      "category": "New",
+      "price": "$34.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Plaid+Shirt"
+    },
+    {
+      "id": 5,
+      "name": "Leather Boots",
+      "category": "Featured",
+      "price": "$79.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Leather+Boots"
+    },
+    {
+      "id": 6,
+      "name": "Summer Dress",
+      "category": "New",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Summer+Dress"
+    },
+    {
+      "id": 7,
+      "name": "Sports Jacket",
+      "category": "Featured",
+      "price": "$59.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sports+Jacket"
+    },
+    {
+      "id": 8,
+      "name": "Casual Sneakers",
+      "category": "Offer",
+      "price": "$24.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Casual+Sneakers"
+    },
+    {
+      "id": 9,
+      "name": "Ripped Jeans",
+      "category": "Featured",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Ripped+Jeans"
+    },
+    {
+      "id": 10,
+      "name": "Oversized Hoodie",
+      "category": "Offer",
+      "price": "$34.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Oversized+Hoodie"
+    },
+    {
+      "id": 11,
+      "name": "V-neck Sweater",
+      "category": "New",
+      "price": "$27.99",
+      "image": "https://via.placeholder.com/150x200.png?text=V-neck+Sweater"
+    },
+    {
+      "id": 12,
+      "name": "Cargo Pants",
+      "category": "Featured",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Cargo+Pants"
+    },
+    {
+      "id": 13,
+      "name": "Flannel Shirt",
+      "category": "New",
+      "price": "$24.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Flannel+Shirt"
+    },
+    {
+      "id": 14,
+      "name": "Biker Jacket",
+      "category": "Featured",
+      "price": "$79.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Biker+Jacket"
+    },
+    {
+      "id": 15,
+      "name": "Bomber Jacket",
+      "category": "Offer",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Bomber+Jacket"
+    },
+    {
+      "id": 16,
+      "name": "Turtleneck Sweater",
+      "category": "New",
+      "price": "$32.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Turtleneck+Sweater"
+    },
+    {
+      "id": 17,
+      "name": "Chinos Pants",
+      "category": "Featured",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Chinos+Pants"
+    },
+    {
+      "id": 18,
+      "name": "Polka Dot Dress",
+      "category": "New",
+      "price": "$45.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Polka+Dot+Dress"
+    },
+    {
+      "id": 19,
+      "name": "Striped Shirt",
+      "category": "Featured",
+      "price": "$22.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Striped+Shirt"
+    },
+    {
+      "id": 20,
+      "name": "Sweatpants",
+      "category": "Offer",
+      "price": "$19.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweatpants"
+    },
+    {
+      "id": 21,
+      "name": "Maxi Skirt",
+      "category": "New",
+      "price": "$29.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Maxi+Skirt"
+    },
+    {
+      "id": 22,
+      "name": "Blazer Jacket",
+      "category": "Featured",
+      "price": "$89.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Blazer+Jacket"
+    },
+    {
+      "id": 23,
+      "name": "Peacoat",
+      "category": "Offer",
+      "price": "$59.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Peacoat"
+    },
+    {
+      "id": 24,
+      "name": "Leather Pants",
+      "category": "Featured",
+      "price": "$79.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Leather+Pants"
+    },
+    {
+      "id": 25,
+      "name": "Puffer Jacket",
+      "category": "New",
+      "price": "$89.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Puffer+Jacket"
+    },
+    {
+      "id": 26,
+      "name": "Trench Coat",
+      "category": "Offer",
+      "price": "$89.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Trench+Coat"
+    },
+    {
+      "id": 27,
+      "name": "Raincoat",
+      "category": "New",
+      "price": "$59.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Raincoat"
+    },
+    {
+      "id": 28,
+      "name": "Hooded Jacket",
+      "category": "Featured",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Hooded+Jacket"
+    },
+    {
+      "id": 29,
+      "name": "Short Sleeve Shirt",
+      "category": "New",
+      "price": "$19.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Short+Sleeve+Shirt"
+    },
+    {
+      "id": 30,
+      "name": "Fleece Jacket",
+      "category": "Featured",
+      "price": "$44.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Fleece+Jacket"
+    },
+    {
+      "id": 31,
+      "name": "Winter Boots",
+      "category": "Offer",
+      "price": "$99.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Winter+Boots"
+    },
+    {
+      "id": 32,
+      "name": "Jean Jacket",
+      "category": "New",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Jean+Jacket"
+    },
+    {
+      "id": 33,
+      "name": "Tunic Dress",
+      "category": "Featured",
+      "price": "$34.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Tunic+Dress"
+    },
+    {
+      "id": 34,
+      "name": "Knit Sweater",
+      "category": "Offer",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Knit+Sweater"
+    },
+    {
+      "id": 35,
+      "name": "Athletic Shorts",
+      "category": "New",
+      "price": "$19.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Athletic+Shorts"
+    },
+    {
+      "id": 36,
+      "name": "Peplum Top",
+      "category": "Featured",
+      "price": "$24.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Peplum+Top"
+    },
+    {
+      "id": 37,
+      "name": "Yoga Pants",
+      "category": "Offer",
+      "price": "$25.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Yoga+Pants"
+    },
+    {
+      "id": 38,
+      "name": "Bomber Hoodie",
+      "category": "New",
+      "price": "$39.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Bomber+Hoodie"
+    },
+    {
+      "id": 39,
+      "name": "Sweater Dress",
+      "category": "Featured",
+      "price": "$54.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweater+Dress"
+    },
+    {
+      "id": 40,
+      "name": "Cardigan Sweater",
+      "category": "Offer",
+      "price": "$42.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Cardigan+Sweater"
+    },
+    {
+      "id": 41,
+      "name": "Harem Pants",
+      "category": "New",
+      "price": "$29.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Harem+Pants"
+    },
+    {
+      "id": 42,
+      "name": "Peasant Blouse",
+      "category": "Featured",
+      "price": "$29.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Peasant+Blouse"
+    },
+    {
+      "id": 43,
+      "name": "Cropped Top",
+      "category": "Offer",
+      "price": "$22.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Cropped+Top"
+    },
+    {
+      "id": 44,
+      "name": "Sweatshirt",
+      "category": "New",
+      "price": "$27.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweatshirt"
+    },
+    {
+      "id": 45,
+      "name": "Sweater Vest",
+      "category": "Featured",
+      "price": "$32.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweater+Vest"
+    },
+    {
+      "id": 46,
+      "name": "Linen Pants",
+      "category": "Offer",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Linen+Pants"
+    },
+    {
+      "id": 47,
+      "name": "Jogger Pants",
+      "category": "New",
+      "price": "$34.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Jogger+Pants"
+    },
+    {
+      "id": 48,
+      "name": "Faux Fur Coat",
+      "category": "Featured",
+      "price": "$89.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Faux+Fur+Coat"
+    },
+    {
+      "id": 49,
+      "name": "Quilted Vest",
+      "category": "Offer",
+      "price": "$54.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Quilted+Vest"
+    },
+    {
+      "id": 50,
+      "name": "Sweater Hoodie",
+      "category": "New",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweater+Hoodie"
+    },
+    {
+      "id": 51,
+      "name": "Sweater Hoodie",
+      "category": "New",
+      "price": "$49.99",
+      "image": "https://via.placeholder.com/150x200.png?text=Sweater+Hoodie"
+    }
+  ]
+  

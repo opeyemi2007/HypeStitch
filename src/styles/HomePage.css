@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.homePageContainer{
+    width: 100%;
+    height: max-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.heroHeader{
+    width: 100%;
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 100px;
+    background-color: #e4e7ed;
+}
+
+.heroHeader img{
+    width: 555px;
+}
+
+.heroHeaderTextWrapper{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background: palegoldenrod; */
+}
+
+.heroHeaderTextWrapper p{
+    font-size: 30px;
+    margin: 0;
+    font-family: monospace;
+}
+
+.heroHeaderTextWrapper h1{
+    font-size: 100px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroHeaderTextWrapper span{
+    font-size: 19px;
+    font-family: monospace;
+}
+
+.heroHeaderTextWrapper .shopNow{
+    padding: 10px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    color: white;
+    margin-top: 40px;
+    background: #2678fc;
+}
+
+
+.shopCategoriesHeadingHolder{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.shopCategoriesHeadingHolder h1{
+    font-size: 60px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.shopByCategoriesSection{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    /* background: blue; */
+}
+
+.shopByCategoriesSection .shopByCategoriesCard{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: whitesmoke;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.shopByCategoriesCard img{
+    height: 100%;
+}
+
+.shopByCategoriesCard .shopByCategorieCardTextWRapper{
+    width: 40%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: #f1eeee; */
+}
+
+.shopByCategorieCardTextWRapper h1{
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.shopByCategorieCardTextWRapper .newDealbtn{
+    padding: 10px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    background: red;
+    transition: 280ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.shopByCategorieCardTextWRapper .newDealbtn:hover{
+    background: rgb(128, 4, 4);
+    transition: 280ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shopByCategorieCardTextWRapper h3{
+    font-size: 25px;
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 25px;
+    text-shadow: 
+    -1px -2px 0 white,  
+     2px -2px 0 white,
+    -1px  2px 0 white,
+     2px  2px 0 white;
+}
+
+
+.latestProductSection{
+    width: 70%;
+    height: max-content;
+    margin-top: 10pc;
+    /* background: burlywood; */
+}
+
+.latestProductSectionHeading{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+.latestProductSectionHeading h1{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.latestProductSectionHeading .navsHolder{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: #000; */
+}
+
+.latestProductSectionHeading .navsHolder a{
+    font-size: 17px;
+    color: black;
+    font-family: monospace;
+    text-decoration: none;
+    transition: 279ms ease-in-out;
+}
+
+.latestProductSectionHeading .navsHolder a:hover{
+    color: red;
+    transition: 279ms ease-in-out;
+}
+
+
+.latestProductSection .productContent{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 29px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.latestProductSection .productCard{
+    width: 28.30%;
+    height: 400px;
+    position: relative;
+    background: #000;
+}
+
+.productCard img{
+    object-fit: fill;
+    height: 100%;
+}
+
+.productCard .productCardInfoCover{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 192, 203, 0.299);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+
+.productCardInfoCover .infoHeaderHolder{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background: red; */
+}
+
+.infoHeaderHolder .addToFavouriteBtn{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.productCardInfoCover .infoHolder{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: white;
+}
+
+.infoHolder h3{
+    font-family: monospace;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+.infoHolder p{
+    margin: 0;
+    font-family: "Dancing Script", serif;
+    margin-left: 10px;
+}
+
+.infoHolder button{
+    padding: 5px;
+    width: max-content;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 13px;
+    transition: 280ms;
+}
+
+.infoHolder button:hover{
+    background: rgb(209, 180, 180);
+    transition: 280ms;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .heroHeader{
+        height: 350px;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .heroHeader img{
+        width: 300px;
+    }
+
+    .heroHeaderTextWrapper{
+        width: max-content;
+        margin-right: 70px;
+        /* background: #000; */
+    }
+
+    .heroHeaderTextWrapper p{
+        font-size: 15px;
+    }
+
+    .heroHeaderTextWrapper h1{
+        font-size: 30px;
+    }
+
+    .heroHeaderTextWrapper span{
+        font-size: 12px;
+    }
+
+    .heroHeaderTextWrapper .shopNow{
+        margin-top: 15px;
+    }
+
+    .shopCategoriesHeadingHolder{
+        height: 100px;
+    }
+
+    .shopCategoriesHeadingHolder h1{
+        font-size: 20px;
+    }
+
+    .shopByCategoriesSection{
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
+
+    .shopByCategoriesSection .shopByCategoriesCard{
+        height: 300px;
+        width: 90%;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .shopByCategoriesCard .shopByCategorieCardTextWRapper{
+        width: max-content;
+    }
+
+    .shopByCategorieCardTextWRapper h1{
+        font-size: 30px;
+    }
+
+    .shopByCategorieCardTextWRapper .newDealbtn{
+        width: max-content;
+        height: max-content;
+        font-size: 10px;
+    }
+
+    .shopByCategorieCardTextWRapper h3{
+        font-size: 15px;
+    }
+
+    .latestProductSection {
+        width: 90%;
+        margin-top: 5pc;
+        /* background: red; */
+    }
+
+    .latestProductSectionHeading h1{
+        font-size: 20px;
+    }
+
+    .latestProductSectionHeading .navsHolder{
+        width: max-content;
+        gap: 10px;
+    }
+
+    .latestProductSectionHeading .navsHolder a{
+        font-size: 11px;
+    }
+
+    .latestProductSection .productCard{
+        width: 85.645%;
+        margin: 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .productCard .productCardInfoCover{
+        opacity: 0;
+        transition: 290ms;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .productCard .productCardInfoCover:hover{
+        opacity: 1;
+    transform: translateY(0);
+    }
+
+    .productCardInfoCover .infoHolder{
+        padding-bottom: 10px;
+    }
+}

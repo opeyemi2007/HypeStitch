@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.footerWrapper{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    background: white;
+}
+
+.footerWrapper .topinFooter{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: green; */
+}
+
+.topinFooter .textWrappers{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+}
+
+.textWrappers img{
+    width: 90px;
+}
+
+.textWrappers span{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.textWrappers h2{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.textWrappers p{
+    margin: 0;
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 280ms;
+}
+
+.textWrappers p:hover{
+    color: blue;
+    transition: 280ms;
+    transform: translateX(10px);
+}
+
+.footerWrapper .bottominFooter{
+    width: 90%;
+    height: 20%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    /* background: blue; */
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* .footerWrapper{
+    } */
+
+    .topinFooter{
+        height: max-content;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .topinFooter .textWrappers{
+        width: 90%;
+        /* background: #a08989; */
+    }
+
+    .textWrappers p{
+        font-size: 15px;
+    }
+
+    .textWrappers span{
+        font-size: 10px;
+    }
+}

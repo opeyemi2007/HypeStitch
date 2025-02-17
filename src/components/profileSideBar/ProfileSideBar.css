@@ -1,0 +1,86 @@
+.profileWrapper .leftSideBar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
+    background: blue;
+}
+
+.leftSideBar .leftSideBarIconHolder{
+    width: 100%;
+    height: 10%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.leftSideBar .insideLeftHolder{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+
+.insideLeftHolder h1{
+    font-family: "Oswald", serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+.insideLeftHolder .navHolder{
+    width: 100%;
+    height: 70%;
+    /* background: green; */
+}
+
+.navHolder p{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    padding: 10px;
+    cursor: pointer;
+    transition: 290ms;
+
+}
+
+.navHolder p:hover{
+    background: whitesmoke;
+    transition: 290ms;
+
+}
+
+.leftSideBar span{
+    color: red;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 290ms;
+}
+.leftSideBar span:hover{
+    background: whitesmoke;
+    transition: 290ms;
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .insideLeftHolder h1{
+        font-size: 30px;
+    }
+
+    .insideLeftHolder .navHolder{
+        height: 50%;
+        /* background: greenyellow; */
+    }
+}

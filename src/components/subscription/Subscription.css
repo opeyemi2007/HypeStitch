@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+.subscriptionWrapper{
+    width: 90%;
+    height: 250px;
+    background: #c7eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.subscriptionWrapper .subscriptionTextHolder{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: red; */
+}
+
+.subscriptionTextHolder h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.subscriptionTextHolder span{
+    font-size: 20px;
+    font-family: "Dancing Script", serif;
+}
+
+.subscriptionWrapper .mailInputHolder{
+    width: max-content;
+    height: 60px;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+}
+
+.mailInputHolder input{
+    width: 350px;
+    height: 90%;   
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.mailInputHolder input::placeholder{
+    font-size: 20px;
+}
+
+.mailInputHolder .emailBtn{
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    background: #2678fc;
+}
+
+
+@media screen and (max-width: 480px) {
+    .subscriptionWrapper{
+        flex-direction: column;
+    }
+
+    .subscriptionWrapper .subscriptionTextHolder{
+        width: 100%;
+        height: 60%;
+        /* background: red; */
+    }
+
+    .subscriptionWrapper{
+        padding: 15px;
+    }
+
+    .subscriptionWrapper .mailInputHolder{
+        height: 50px;
+    }
+
+    .mailInputHolder input{
+        width: 200px;
+        height: 80%;
+    }
+
+    .mailInputHolder .emailBtn{
+        width: 100px;
+        font-size: 15px;
+    }
+}
