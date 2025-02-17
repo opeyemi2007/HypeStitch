@@ -1,6 +1,6 @@
 import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router'
-import GlobalRoutes from './routes/globalRoutes'
+import GlobalRoutes from './routes/GlobalRoutes'
 import HomePage from './pages/HomePage'
 import CartPage from './pages/CartPage'
 import LogInPage from './pages/auth/LogInPage'
