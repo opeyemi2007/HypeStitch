@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/LogInPage.css';
 import { useNavigate } from 'react-router';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios'; // Import axios
 
 const LogInPage = () => {
@@ -62,6 +62,8 @@ const LogInPage = () => {
                 Please Sign in now
                 </h1>
 
+                <ToastContainer/>
+
                 <input type="email" placeholder='email' className='loginInput'
                 onChange={(e)=> setUserInput((prev)=> ({...prev, email: e.target.value}))}
                 value={userInput.email}
@@ -79,7 +81,7 @@ const LogInPage = () => {
                 </div>
                 <span><input type="checkbox"  name="remeber" value="RememberMe" className='rememberMer'/> Remember Me</span>
                 
-                <button className="loginBtn">LOG IN</button>
+                <button className="loginBtn" onClick={handleLogin}>LOG IN</button>
             </div>
          </div>
     </div>
