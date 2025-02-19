@@ -7,7 +7,7 @@ import LogInPage from './pages/auth/LogInPage'
 import SignUpPage from './pages/auth/SignUpPage'
 import AboutPage from './pages/AboutPage'
 import ProfilePage from './pages/ProfilePage'
-import SettingsPage from './pages/SettingsPage'
+import CategoryPage from './pages/CategoryPage'
 import PrivateRoute from './routes/PrivateRoute'
 
 const App = () => {
@@ -20,6 +20,10 @@ const App = () => {
         {
           path: "",
           element: <HomePage/>
+        },
+        {
+          path: "/category",
+          element: <CategoryPage />
         },
         {
           path: '/cart',
@@ -40,20 +44,21 @@ const App = () => {
         {
           path: '/login',
           element: <LogInPage/>
-        }
+        },
+        {
+          path: 'privateroute',
+          element: <PrivateRoute/>,
+          Children: [
+            {
+              path: 'profile',
+              element: <ProfilePage/>
+            }
+          ]
+        },
       ]
     },
 
-    {
-      path: 'privateroute',
-      element: <PrivateRoute/>,
-      Children: [
-        {
-          path: 'profile',
-          element: <ProfilePage/>
-        }
-      ]
-    },
+    
 
 
   ])

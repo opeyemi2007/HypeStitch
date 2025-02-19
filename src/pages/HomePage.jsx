@@ -7,7 +7,6 @@ import BackToTopButton from '../components/back-to-top-btn/BackToTopBtn';
 
 const HomePage = () => {
   const [category, setCategory] = useState('All');
-  const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
   // Load cart from localStorage on initial render

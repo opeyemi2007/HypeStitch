@@ -115,7 +115,7 @@ const Header = () => {
 
       <ul className="navLinks">
         <a onClick={()=> navigate('/')}>Home</a>
-        <a>Category</a>
+        <a  onClick={()=> navigate('/category')}>Category</a>
         <div className="hotHolder"><MdWhatshot /></div>
         <a onClick={latestToggles}>Latest</a>
         <a onClick={blogToggles}>Products</a>  
