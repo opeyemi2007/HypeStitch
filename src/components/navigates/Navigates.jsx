@@ -68,7 +68,7 @@ const Navigates = () => {
       )}
     </div>
 
-        <div className="userProfile"><FaUserCircle cursor={'pointer'} onClick={()=> navigate('/login')}/></div>
+        <div className="userProfile"><FaUserCircle cursor={'pointer'} onClick={()=> navigate('/privateroute')}/></div>
 
         <ul className='linksWrapper'>
             <li>My Account</li>

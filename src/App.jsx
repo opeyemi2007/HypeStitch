@@ -34,12 +34,12 @@ const App = () => {
           element: <AboutPage/>
         },
         {
-          path: '/login',
-          element: <LogInPage/>
-        },
-        {
           path: '/signup',
           element: <SignUpPage/>
+        },
+        {
+          path: '/login',
+          element: <LogInPage/>
         }
       ]
     },
@@ -49,7 +49,7 @@ const App = () => {
       element: <PrivateRoute/>,
       Children: [
         {
-          path: '',
+          path: 'profile',
           element: <ProfilePage/>
         }
       ]

@@ -111,7 +111,7 @@ const Header = () => {
         }
        
 
-      <img src="src/assets/images/site-Logo.jpg" alt="" className="logo" onClick={handleLogoClick}/>
+      <img src="images/site-Logo.jpg" alt="" className="logo" onClick={handleLogoClick}/>
 
       <ul className="navLinks">
         <a onClick={()=> navigate('/')}>Home</a>

@@ -10,7 +10,7 @@ const Footer = () => {
     <div className='footerWrapper'>
       <div className="topinFooter">
         <div className="textWrappers">
-          <img src="src/assets/images/site-Logo.jpg" alt="" />
+          <img src="images/site-Logo.jpg" alt="" />
           <span>
           Welcome to <b>HypeStitch</b> – where every stitch tells a 
           story and every piece speaks your vibe. We’re all about 

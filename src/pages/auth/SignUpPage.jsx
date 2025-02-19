@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../styles/SignUpPage.css";
 import { useNavigate } from "react-router";
 import axios from "axios";
+import {SyncLoader} from 'react-spinners';
 import { ToastContainer, toast } from "react-toastify";
 
 const SignUpPage = () => {
@@ -156,7 +157,7 @@ const SignUpPage = () => {
 
 
           <button className="loginBtn" onClick={handleLogin} disabled={loadingState}>
-            {loadingState ? "Signing up..." : "SIGN UP"}
+            {loadingState ? <SyncLoader color="white" size={14}/> : "SIGN UP"}
           </button>
         </div>
       </div>

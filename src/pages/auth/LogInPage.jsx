@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../styles/LogInPage.css';
 import { useNavigate } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
+import {SyncLoader} from 'react-spinners';
 import axios from 'axios'; // Import axios
 
 const LogInPage = () => {
@@ -81,7 +82,9 @@ const LogInPage = () => {
                 </div>
                 <span><input type="checkbox"  name="remeber" value="RememberMe" className='rememberMer'/> Remember Me</span>
                 
-                <button className="loginBtn" onClick={handleLogin}>LOG IN</button>
+                <button className="loginBtn" onClick={handleLogin} disabled={loadingState}>
+                     {loadingState ? <SyncLoader color="white" size={14}/> : "LOG IN"}
+                </button>
             </div>
          </div>
     </div>
