@@ -3,10 +3,10 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { MdArrowDropUp } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
 import './Navigates.css'
-import nigeriaFlag from '../../images/Flag of Nigeria.jpg'
-import usa from '../../images/use Flag.jpg'
-import uk from '../../images/uk flag.jpg'
-import ghana from '../../images/ghana flag.jpg'
+import nigeriaFlag from '../../../images/Flag of Nigeria.jpg'
+import usa from '../../../images/use Flag.jpg'
+import uk from '../../../images/uk flag.jpg'
+import ghana from '../../../images/ghana flag.jpg'
 import { useNavigate } from 'react-router';
 
 const countries = [
@@ -68,38 +68,6 @@ const Navigates = () => {
       )}
     </div>
 
-        {/* <div className="countrySelectorWrapper" onClick={handleDropDownClick}>
-            
-          
-                <div className="countryFlagHolder">
-                  <img src="src/assets/images/Flag of Nigeria.jpg" className='countryFlag'/>
-                 </div>
-            <div className="countryName">NIGERIA</div>
-            <div className="currencyName">NGN</div>
-            
-            
-           
-
-           {
-            dropDown?  <MdArrowDropUp className='dropIcon'/> : <IoMdArrowDropdown className='dropIcon'/>
-           }
-                
-            
-            
-           
-            {
-                dropDown?  <div className="countrydropdown">
-                <div className="dropdownContent">
-                    <a href="#">Nigeria</a>
-                    <a href="#">Ghana</a>
-                    <a href="#">USA</a>
-                    <a href="#">UK</a>
-                </div>
-            </div> : null
-            }
-           
-        </div>
-         */}
         <div className="userProfile"><FaUserCircle cursor={'pointer'} onClick={()=> navigate('/login')}/></div>
 
         <ul className='linksWrapper'>

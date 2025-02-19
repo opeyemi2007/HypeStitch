@@ -156,7 +156,7 @@ const Header = () => {
           </div>
         </div>
 
-        <button className="signInBtn" onClick={()=> navigate('/login')}>Sign in</button>
+        <button className="signInBtn" onClick={()=> navigate('/privateroute')}>Sign in</button>
       </div>
     </div>
   );

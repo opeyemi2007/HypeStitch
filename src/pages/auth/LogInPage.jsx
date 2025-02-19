@@ -1,8 +1,43 @@
-import React from 'react'
-import '../../styles/LogInPage.css'
-import { useNavigate } from 'react-router'
+import React, { useState } from 'react';
+import '../../styles/LogInPage.css';
+import { useNavigate } from 'react-router';
+import { toast } from 'react-toastify';
+import axios from 'axios'; // Import axios
 
 const LogInPage = () => {
+  const [loadingState, setLoadingState] = useState(false);
+  const [userInput, setUserInput] = useState({
+    email: '',
+    password: '',
+  });
+
+  const Api = 'https://movie-app-ch5.onrender.com/api/user/log-in';
+
+  const handleLogin = async () => {
+    if (!userInput.email && !userInput.password) {
+      toast.error('Please input your informations');
+      return;
+    }
+
+    try {
+      setLoadingState(true);
+      const res = await axios.post(Api, userInput);
+      toast.success(`You are logged in as ${userInput.email}`);
+      if (res.status === 200) {
+        localStorage.setItem('clientData', JSON.stringify(res.data)); // Corrected 'ress' to 'res'
+
+        setTimeout(() => {
+          navigate('/');
+        }, 2000);
+      }
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Login failed');
+    } finally {
+      setLoadingState(false); // Reset loading state
+    }
+  };
+
+  
   const navigate = useNavigate()
   return (
     <div className='loginWrapper'>
@@ -27,8 +62,17 @@ const LogInPage = () => {
                 Please Sign in now
                 </h1>
 
-                <input type="email" placeholder='email' className='loginInput'/>
-                <input type="password" placeholder='Password' className='loginInput'/>
+                <input type="email" placeholder='email' className='loginInput'
+                onChange={(e)=> setUserInput((prev)=> ({...prev, email: e.target.value}))}
+                value={userInput.email}
+                />
+
+                <input type="password" placeholder='Password' className='loginInput'
+                onChange={(e)=> setUserInput((prev)=>({...prev, password: e.target.value}))}
+                value={userInput.password}
+                />
+
+
                 <div className="rememberMeAndSignupLinkHolder">
                   <span>Don't have an account? <a className='signupLink' onClick={()=> navigate('/signup')} style={{color: 'blue'}}>SignUp</a></span>
                   <a href='#' className='forgotPasswordLink'>Forgot Password?</a>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ProductsData from '../productsData/Products.json';
 import '../styles/HomePage.css';
 import { GoHeart } from "react-icons/go";
 import { FaOpencart } from "react-icons/fa6";
@@ -17,10 +16,7 @@ const HomePage = () => {
     setCart(savedCart);
   }, []);
 
-  const handleCategoryChange = (category) => {
-    setCategory(category);
-  };
-
+  
   const handleAddToCart = (product) => {
     
     const isProductInCart = cart.find((item) => item.id === product.id);
@@ -28,22 +24,71 @@ const HomePage = () => {
       alert("This item is already in your cart!");
       return;
     }
-
+    
     const updatedCart = [...cart, product];
     setCart(updatedCart);
     
     localStorage.setItem('cart', JSON.stringify(updatedCart));
   };
-
-  const filteredProducts = products.filter((product) =>
+  
+  const handleCategoryChange = (category) => {
+    setCategory(category);
+  };
+  
+  const ProductsData = [
+    {
+      "id": 1,
+      "name": "Men's cotton coat",
+      "category": "New",
+      "price": "$29.99",
+      "image": "images/Men's cotton coat - Black _ XL.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Mens Black Quilted Sheep Leather Pant",
+      "category": "Featured",
+      "price": "$49.99",
+      "image": "images/Mens Black Quilted Sheep Leather Pant - 48 _ 29.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Pocket Collared Shirts Top",
+      "category": "Offer",
+      "price": "$29.99",
+      "image": "images/OYOANGLE Men's Colorblock Plaid Print Button Down Long Sleeve Pocket Collared Shirts Top.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Jaqueta de algodão masculina",
+      "category": "New",
+      "price": "$34.99",
+      "image": "images/Jaqueta de algodão masculina rasgada com bolsos com lapela em Denim azul, sem camiseta, estilo festa grunge rapper.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Turtleneck Sweater",
+      "category": "Featured",
+      "price": "$79.99",
+      "image": "images/Men's Turtleneck Sweater Pullover Sweater Jumper Striped Sweater Ribbed Cable Knit Regular Knitted Color Block Turtleneck Keep Warm Modern Contemporary Daily Wear Going out Clothing Apparel Fall 2025 - $42_.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "cotton coat",
+      "category": "New",
+      "price": "$39.99",
+      "image": "images/Men's cotton coat - Black _ XL.jpeg"
+    },
+  ]
+  const filteredProducts = ProductsData.filter((product) =>
     category === 'All' || product.category === category
   );
+
 
   return (
     <>
       <div className='homePageContainer'>
         <div className="heroHeader">
-          <img src="src/images/shoppingLady.jpg" alt="" />
+          <img src="images/shoppingLady.jpg" alt="" />
           <div className="heroHeaderTextWrapper">
             <p>60% Discount</p>
             <h1>Valentine Collection</h1>
@@ -58,7 +103,7 @@ const HomePage = () => {
         <div className="shopCategoriesHeadingHolder"><h1>Shop By Category</h1></div>
         <div className="shopByCategoriesSection">
         <div className="shopByCategoriesCard">
-          <img src="src/assets/images/Fashion Loose Rabbit Printed Short-sleeved T-shirt - Blue _ M.jpg" alt="" />
+          <img src="images/Fashion Loose Rabbit Printed Short-sleeved T-shirt - Blue _ M.jpg" alt="" />
           <div className="shopByCategorieCardTextWRapper">
             <h1>Fashion Men</h1>
             <button className='newDealbtn'>Best New Deals</button>
@@ -67,7 +112,7 @@ const HomePage = () => {
         </div>
 
         <div className="shopByCategoriesCard">
-          <img src="src/assets/images/cba0a6dd-238a-4eef-bba7-33950de2d7d3.jpg" alt="" />
+          <img src="images/cba0a6dd-238a-4eef-bba7-33950de2d7d3.jpg" alt="" />
           <div className="shopByCategorieCardTextWRapper">
             <h1>Kids Wears</h1>
             <button className='newDealbtn'>Best New Deals</button>
@@ -76,7 +121,7 @@ const HomePage = () => {
 
 
         <div className="shopByCategoriesCard">
-          <img src="src/assets/images/streetwear-removebg-preview.png" alt="" />
+          <img src="images/streetwear-removebg-preview.png" alt="" />
           <div className="shopByCategorieCardTextWRapper">
             <h1>Street Wear</h1>
             <button className='newDealbtn'>Best New Deals</button>
@@ -97,8 +142,8 @@ const HomePage = () => {
           </div>
 
           <div className="productContent">
-            {ProductsData.length > 0 ? (
-              ProductsData.map((product, key) => (
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product, key) => (
                 <div key={product.id} className="productCard">
                   <img src={product.image} alt={product.name} />
                   <div className="productCardInfoCover">

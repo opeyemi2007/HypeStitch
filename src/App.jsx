@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router'
 import GlobalRoutes from './routes/GlobalRoutes'
 import HomePage from './pages/HomePage'
@@ -7,8 +7,8 @@ import LogInPage from './pages/auth/LogInPage'
 import SignUpPage from './pages/auth/SignUpPage'
 import AboutPage from './pages/AboutPage'
 import ProfilePage from './pages/ProfilePage'
-import ProfileRoute from './routes/ProfileRoute'
 import SettingsPage from './pages/SettingsPage'
+import PrivateRoute from './routes/PrivateRoute'
 
 const App = () => {
 
@@ -44,23 +44,18 @@ const App = () => {
       ]
     },
 
-
-
-
     {
-      path: '/profileroutes',
-      element: <ProfileRoute/>,
-      children:[
+      path: 'privateroute',
+      element: <PrivateRoute/>,
+      Children: [
         {
           path: '',
           element: <ProfilePage/>
-        },
-        {
-          path: '/profileroutes/settings',
-          element: <SettingsPage/>
         }
       ]
-    }
+    },
+
+
   ])
 
   
