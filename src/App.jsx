@@ -10,6 +10,7 @@ import ProfilePage from './pages/ProfilePage'
 import CategoryPage from './pages/CategoryPage'
 import PrivateRoute from './routes/PrivateRoute'
 import CheckOutPage from './pages/CheckOutPage'
+import DetailsPage from './pages/DetailsPage'
 
 const App = () => {
 
@@ -63,6 +64,10 @@ const App = () => {
       path: "/checkout",
       element: <CheckOutPage/>,
     },
+    {
+      path: '/productDetails',
+      element: <DetailsPage/>
+    }
     
 
     

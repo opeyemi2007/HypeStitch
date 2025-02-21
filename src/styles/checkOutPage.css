@@ -332,3 +332,16 @@
     margin-left: 23px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@media screen and (max-width: 480px) {
+    .checkOutForm{
+        width: 100%;
+    }
+
+    .checkOutPageWrapper{
+        background: #000;
+    }
+
+    
+}

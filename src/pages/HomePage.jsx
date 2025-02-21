@@ -17,14 +17,14 @@ const HomePage = () => {
       "name": "Men's cotton coat",
       "category": "New",
       "price": "$29.99",
-      "image": "images/Men's cotton coat - Black _ XL.jpeg"
+      "image": "/images/Men's cotton coat - Black _ XL.jpeg"
     },
     {
       "id": 2,
       "name": "Mens Black Quilted Sheep Leather Pant",
       "category": "Featured",
       "price": "$49.99",
-      "image": "images/Mens Black Quilted Sheep Leather Pant - 48 _ 29.jpeg"
+      "image": "/images/Mens Black Quilted Sheep Leather Pant - 48 _ 29.jpeg"
     },
     {
       "id": 3,
@@ -38,21 +38,21 @@ const HomePage = () => {
       "name": "Jaqueta de algodão masculina",
       "category": "New",
       "price": "$34.99",
-      "image": "images/Jaqueta de algodão masculina rasgada com bolsos com lapela em Denim azul, sem camiseta, estilo festa grunge rapper.jpeg"
+      "image": "/images/Jaqueta de algodão masculina rasgada com bolsos com lapela em Denim azul, sem camiseta, estilo festa grunge rapper.jpeg"
     },
     {
       "id": 5,
       "name": "Turtleneck Sweater",
       "category": "Featured",
       "price": "$79.99",
-      "image": "images/Men's Turtleneck Sweater Pullover Sweater Jumper Striped Sweater Ribbed Cable Knit Regular Knitted Color Block Turtleneck Keep Warm Modern Contemporary Daily Wear Going out Clothing Apparel Fall 2025 - $42_.jpeg"
+      "image": "/images/Men's Turtleneck Sweater Pullover Sweater Jumper Striped Sweater Ribbed Cable Knit Regular Knitted Color Block Turtleneck Keep Warm Modern Contemporary Daily Wear Going out Clothing Apparel Fall 2025 - $42_.jpeg"
     },
     {
       "id": 6,
       "name": "cotton coat",
       "category": "New",
       "price": "$39.99",
-      "image": "images/Men's cotton coat - Black _ XL.jpeg"
+      "image": "/images/Men's cotton coat - Black _ XL.jpeg"
     },
   ]
   const filteredProducts = ProductsData.filter((product) =>
@@ -64,7 +64,7 @@ const HomePage = () => {
     <>
       <div className='homePageContainer'>
         <div className="heroHeader">
-          <img src="images/shoppingLady.jpg" alt="" />
+          <img src="/images/shoppingLady.jpg" alt="" />
           <div className="heroHeaderTextWrapper">
             <p>60% Discount</p>
             <h1>Valentine Collection</h1>
