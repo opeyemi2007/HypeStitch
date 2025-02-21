@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+.checkOutPageWrapper{
+    width: 100%;
+    height: max-content;
+    background: white;
+}
+
+.checkOutForm{
+    width: 50%;
+    height: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.paymentSeletorWrapper{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.521);
+}
+
+.paymentSeletorWrapper p{
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 290ms;
+}
+
+.paymentSeletorWrapper p:hover{
+    background: rgba(255, 255, 255, 0.815);
+    transition: 350ms;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.paymentSeletorWrapper p:active{
+    background: rgba(255, 255, 255, 0.815);
+    transition: 350ms;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.checkOutForm .EmailAddress{
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+}
+
+.checkOutForm .EmailAddress p{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.checkOutForm .EmailAddress input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+}
+
+
+.checkOutPageWrapper .paymentForm{
+    width: 70%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background: orange; */
+}
+
+.paymentForm .firstChoice, .secondChoice{
+    width: 42%;
+    height: 80%;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.firstChoice .paymentIcons{
+    font-size: 30px;
+}
+
+.secondChoice .paymentIcons{
+    width: 90px;
+}
+
+.firstChoice p{
+    margin: 0;
+    font-size: 20px ;
+    font-family: monospace;
+}
+
+.secondChoice p{
+    margin: 0;
+    font-size: 20px ;
+    font-family: monospace;
+}
+
+.paymentForm .firstChoice:hover, .secondChoice:hover{
+    background: rgba(255, 255, 255, 0.815);
+    border: 2px solid #2577fd;
+    transition: 350ms;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.paymentForm span{
+    padding: 20px;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.checkOutForm .cardDetails{
+    width: 70%;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+}
+
+.checkOutForm .cardDetails p{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.checkOutForm .cardDetails input{
+    width: 96%;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+}
+
+.cardNumberInputHolder{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dateAndcvvInputWrapper{
+    width: 70%;
+    height: 100px;
+    margin-top: 40px;
+    /* background: #d64646; */
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.expiryDate p{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+/*  */
+
+.expiryDate .expiryDateInputHolder input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+}
+
+.spanHolder{
+    width: 70%;
+    height: 40px;
+    font-size: 13px;
+    font-family: monospace;
+    /* background: #c53535; */
+}
+
+.billingAddressTable{
+    width: 70%;
+    height: 315px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 23px;
+    position: relative;
+}
+
+.billingAddressTable p{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+.billingAddressTable input{
+    width: 96%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    margin-bottom: 10px;
+}
+
+.addressTableWrapper span{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.SelectStateDropDown{
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    top: 95%;
+    border-radius: 5px;
+    background: #000;
+}
+
+.totalAndAllWrapper{
+    width: 70%;
+    height: max-content; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 23px;
+    /* background: #333; */
+}
+
+.totalAndAllWrapper .totalPrice{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalAndAllWrapper .totalPrice p{
+    margin: 0;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    color: black;
+    padding: 5px;
+}
+
+.spanHolder span{
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+
+ .payBtn{
+    width: 65%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2577fd;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    border: none;
+    margin-left: 23px;
+}

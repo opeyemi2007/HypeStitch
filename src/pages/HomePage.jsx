@@ -1,35 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/HomePage.css';
-import { GoHeart } from "react-icons/go";
-import { FaOpencart } from "react-icons/fa6";
 import Subscription from '../components/subscription/Subscription';
 import BackToTopButton from '../components/back-to-top-btn/BackToTopBtn';
+import ProductCard from '../components/productCard/ProductCard';
 
 const HomePage = () => {
   const [category, setCategory] = useState('All');
-  const [cart, setCart] = useState([]);
-
-  // Load cart from localStorage on initial render
-  useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
-    setCart(savedCart);
-  }, []);
-
-  
-  const handleAddToCart = (product) => {
-    
-    const isProductInCart = cart.find((item) => item.id === product.id);
-    if (isProductInCart) {
-      alert("This item is already in your cart!");
-      return;
-    }
-    
-    const updatedCart = [...cart, product];
-    setCart(updatedCart);
-    
-    localStorage.setItem('cart', JSON.stringify(updatedCart));
-  };
-  
+ 
   const handleCategoryChange = (category) => {
     setCategory(category);
   };
@@ -143,19 +120,7 @@ const HomePage = () => {
           <div className="productContent">
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product, key) => (
-                <div key={product.id} className="productCard">
-                  <img src={product.image} alt={product.name} />
-                  <div className="productCardInfoCover">
-                    <div className="infoHeaderHolder"><GoHeart className='addToFavouriteBtn'/></div>
-                    <div className="infoHolder">
-                      <h3>{product.name}</h3>
-                      <p>{product.price}</p>
-                      <button onClick={() => handleAddToCart(product)}>
-                        <FaOpencart /> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
+               <ProductCard key={key} data={product}/>
               ))
             ) : (
               <p>No products found in this category.</p>

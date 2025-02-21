@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage'
 import ProfilePage from './pages/ProfilePage'
 import CategoryPage from './pages/CategoryPage'
 import PrivateRoute from './routes/PrivateRoute'
+import CheckOutPage from './pages/CheckOutPage'
 
 const App = () => {
 
@@ -27,7 +28,7 @@ const App = () => {
         },
         {
           path: '/cart',
-          element: <CartPage/>
+          element: <CartPage/>,
         },
         {
           path: '/about',
@@ -57,6 +58,12 @@ const App = () => {
         },
       ]
     },
+
+    {
+      path: "/checkout",
+      element: <CheckOutPage/>,
+    },
+    
 
     
 

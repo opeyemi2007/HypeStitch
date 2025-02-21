@@ -217,85 +217,6 @@
     margin-top: 40px;
 }
 
-.latestProductSection .productCard{
-    width: 28.30%;
-    height: 400px;
-    position: relative;
-    background: #000;
-}
-
-.productCard img{
-    width: 100%;
-    object-fit: fill;
-    height: 100%;
-}
-
-.productCard .productCardInfoCover{
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.315);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-}
-
-.productCardInfoCover .infoHeaderHolder{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    /* background: red; */
-}
-
-.infoHeaderHolder .addToFavouriteBtn{
-    font-size: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.productCardInfoCover .infoHolder{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: white;
-}
-
-.infoHolder h3{
-    font-family: monospace;
-    font-size: 20px;
-    margin: 0;
-    margin-left: 10px;
-
-}
-
-.infoHolder p{
-    margin: 0;
-    font-family: "Dancing Script", serif;
-    margin-left: 10px;
-}
-
-.infoHolder button{
-    padding: 5px;
-    width: max-content;
-    cursor: pointer;
-    border: 0;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding: 5px;
-    font-size: 13px;
-    transition: 280ms;
-}
-
-.infoHolder button:hover{
-    background: rgb(209, 180, 180);
-    transition: 280ms;
-}
 
 
 
@@ -376,6 +297,7 @@
     .latestProductSection {
         width: 90%;
         margin-top: 5pc;
+        flex-wrap: wrap;
         /* background: red; */
     }
 
@@ -392,7 +314,7 @@
         font-size: 11px;
     }
 
-    .latestProductSection .productCard{
+    /* .latestProductSection .productCard{
         width: 85.645%;
         margin: 0;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -412,5 +334,5 @@
 
     .productCardInfoCover .infoHolder{
         padding-bottom: 10px;
-    }
+    } */
 }
