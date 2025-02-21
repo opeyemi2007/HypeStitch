@@ -52,7 +52,7 @@ const HomePage = () => {
       "name": "cotton coat",
       "category": "New",
       "price": "$39.99",
-      "image": "/images/Men's cotton coat - Black _ XL.jpeg"
+      "image": "./images/Men's cotton coat - Black _ XL.jpeg"
     },
   ]
   const filteredProducts = ProductsData.filter((product) =>
